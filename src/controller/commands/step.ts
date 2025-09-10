@@ -1,5 +1,8 @@
-import { Command } from "./command.js";
 
+import { Command } from "./Command.js";
+
+/* Используется для осуществления очередного шага игры при команде из view.
+ ***********************************************************************/
 export class StepCommand extends Command {
   private step: number;
 

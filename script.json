@@ -1,7 +1,7 @@
 {
   "name": "Game name.",
   "description": "Game description.",
-  "win_ids": [18, 19],
+  "win_ids": [18, 19, 15],
   "loss_ids": [16, 17],
   "beginStep": 0,
   

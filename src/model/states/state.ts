@@ -1,7 +1,9 @@
 
-import { Model } from "../model.js";
-import { View } from "../../view/view.js";
+import { Model } from "../Model.js";
+import { View } from "../../view/View.js";
 
+/* Используется для хранения данных о текущем состоянии нашей модели.
+ ***********************************************************************/
 export abstract class State {
   protected _model: Model;
   public setModel(model: Model) {
@@ -21,6 +23,8 @@ export abstract class State {
     this._view.setText(text);
   }
   
+  /* Метод используется после изменения модели для изменения view.
+   ***********************************************************************/
   abstract handle(): void;
 }
 
